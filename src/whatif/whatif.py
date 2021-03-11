@@ -75,7 +75,6 @@ class Model():
         scenario_inputs : dict of str to sequence
             Keys are input variable names and values are sequence of values for each scenario for this variable.
 
-            Is consumed by scikit-learn ParameterGrid() function. See https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.ParameterGrid.html
         outputs : list of str
             List of output variable names
 

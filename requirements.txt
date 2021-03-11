@@ -2,7 +2,8 @@
 -e .
 
 # external requirements
-click
+numpy
+pandas
 Sphinx
 
 
