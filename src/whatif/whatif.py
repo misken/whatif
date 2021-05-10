@@ -54,8 +54,6 @@ def get_sim_results_df(results):
         return dfs[0]
 
 
-
-
 class Model():
     """Base class for models"""
 
@@ -297,8 +295,14 @@ class Model():
         df = pd.DataFrame(X, columns=columns)
 
     def __str__(self):
-        """Print dictionary of object attributes but don't include any args with _ as first char."""
+        """
+        Print dictionary of object attributes that don't include an underscore as first char
+        """
         return str({key: val for (key, val) in vars(self).items() if key[0] != '_'})
+
+
+
+
 
 
 
