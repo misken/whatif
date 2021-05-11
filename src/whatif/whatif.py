@@ -28,11 +28,11 @@ def create_parameter_grid(scenario_inputs):
 
 
 def get_sim_results_df(results):
-    """Transform raw simulation output dictionary to Pandas `DataFrame`.
+    """Transform raw simulation output dictionary to Pandas ``DataFrame``.
 
     Parameters
     ----------
-    results : list of dictionaries. See
+    results : list of dictionaries
 
     Returns
     -------
