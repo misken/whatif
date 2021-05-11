@@ -1,50 +1,46 @@
-whatif - Do Excel style what if? analysis in Python
-===================================================
+# whatif - Do Excel style what if? analysis in Python
+
+The whatif package helps you build business analysis oriented models in Python that you might normally build in Excel. 
+Specifically, whatif includes functions that are similar to Excel's Data Tables and Goal Seek for doing
+sensitivity analysis and "backsolving" (e.g. finding a breakeven point). It also includes functions
+for facilitating Monte-Carlo simulation using these models.
 
 Related blog posts
-----------------------------------
-
 
 * [Part 1: Models and Data Tables](http://hselab.org/excel-to-python-1-models-datatables.html)
 * [Part 2: Goal Seek](http://hselab.org/excel-to-python-2-goalseek.html)
 * [Part 3: Monte-carlo simulation](http://hselab.org/excel-to-python-3-simulation.html)
 
-Project Organization
-------------
+## Features
 
-    ├── LICENSE
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so whatif can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── whatif <- Main package folder
-    │   │   └── __init__.py    <- Marks as package
-    │   │   └── whatif.py  <- Just some placeholder Python source code file
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+The whatif package is new and quite small. It contains:
 
+* a base ``Model`` class that can be subclassed to create new models
+* Functions for doing data tables (``data_table``) and goal seek (``goal_seek``) on a models
+* Functions for doing Monte-Carlo simulation with a model (``simulate``)
 
---------
+## Installation
 
-<p><small>Project based on a simplified version of the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+Clone the whatif project from GitHub:
+
+.. code::
+
+    git clone https://github.com/misken/whatif.git
+
+and then you can install it locally by running
+the following from the project directory.
+
+.. code::
+
+	cd whatif
+    pip install .
+	
+Getting started
+---------------
+
+See the [Getting started with whatif](TODO) page in the docs.
+
+License
+-------
+
+The project is licensed under the MIT license.
