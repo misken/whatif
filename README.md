@@ -7,9 +7,16 @@ for facilitating Monte-Carlo simulation using these models.
 
 Related blog posts
 
-* [Part 1: Models and Data Tables](http://hselab.org/excel-to-python-1-models-datatables.html)
-* [Part 2: Goal Seek](http://hselab.org/excel-to-python-2-goalseek.html)
-* [Part 3: Monte-carlo simulation](http://hselab.org/excel-to-python-3-simulation.html)
+* [Part 1: Models and Data Tables](https://bitsofanalytics.org/posts/what-if-1-model-datatable/what_if_1_model_datatable.html)
+* [Part 2: Goal Seek](https://bitsofanalytics.org/posts/what-if-2-goal-seek/what_if_2_goalseek.html)
+* [Part 3: Monte-carlo simulation](https://bitsofanalytics.org/posts/what-if-3-simulation/what_if_3_simulation.html)
+* [Part 4: Project structure and packaging](https://bitsofanalytics.org/posts/what-if-4-project-packaging/what_if_4_project_packaging.html)
+
+This package is also developed as part of [one of the courses I teach](http://www.sba.oakland.edu/faculty/isken/courses/mis6900/index.html). You can find the course web pages at:
+
+* [Submodule 1: What if analysis with Python](http://www.sba.oakland.edu/faculty/isken/courses/mis6900/mod3a_whatif.html)
+* [Submodule 2: Creating the whatif package](http://www.sba.oakland.edu/faculty/isken/courses/mis6900/mod3b_whatif_packaging.html)
+* [Submodule 3: Using Python to wrangle Excel files](http://www.sba.oakland.edu/faculty/isken/courses/mis6900/mod3c_python_excel.html)
 
 ## Features
 
@@ -32,13 +39,13 @@ the following from the project directory.
 
 .. code::
 
-	cd whatif
+    cd whatif
     pip install .
 	
 Getting started
 ---------------
 
-See the [Getting started with whatif](TODO) page in the docs.
+See the materials in the blog posts and course webs listed above. 
 
 License
 -------
